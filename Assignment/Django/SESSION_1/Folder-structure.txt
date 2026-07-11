@@ -1,0 +1,19 @@
+* Foodiehub_Project /
+    -> manage.py : 1. Command-line utility used to manage the Django project.
+                   2. Runs the development server, migrations, creates apps, and executes administrative commands.
+    ->  Foodiehub_Project /
+        * __init__.py 
+        * asgi.py : 1. Stands for Asynchronous Server Gateway Interface.
+                    2. Supports asynchronous features such as WebSockets, real-time chat, and long-lived connections.
+        * settings.py : 1. Stores all project settings and configuration.
+                        2. Includes database configuration, installed apps, middleware, templates, static files, security settings, and more.
+        * urls.py : 1. Defines the URL routes for the project.
+                    2. Maps URLs to views so users can access different pages.
+        * wsgi.py : 1. Stands for Web Server Gateway Interface.
+                    2. Used to deploy the Django application on traditional web servers like Gunicorn or uWSGI.            
+
+
+
+Django vs Flask:
+    Django is a full-featured web framework that includes built-in authentication, an admin panel, ORM, and security features, making it ideal for large applications. Flask is a lightweight and flexible framework that provides only the essentials, allowing developers to choose additional libraries as needed. For an application like Instagram or Zomato, Django is a better choice because it offers robust built-in features, better scalability, and faster development for complex applications with user accounts, databases, and admin functionality.                     
+
