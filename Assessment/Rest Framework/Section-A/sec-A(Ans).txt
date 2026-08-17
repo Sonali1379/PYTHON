@@ -1,0 +1,21 @@
+1.REST APIs are preferred because they are platform-independent, lightweight, scalable, reusable, and well-suited for separating modern frontend applications from backend services.
+
+2.In Django REST Framework (DRF), serializers act as a validation layer between the incoming API data and the database/model.
+    validate_<field_name>() is used for custom validation of a specific serializer field.
+
+    The method should return the validated value when it is valid and should raise
+    serializers.ValidationError when it is invalid.
+
+3.HTTP status codes are important in REST APIs because they tell the client what happened to its request. Using the correct status code makes an API predictable and easier for frontend/mobile developers to handle.
+
+    200 OK means the request was successfully processed.
+    It is commonly used when retrieving or successfully updating data.
+
+    201 Created specifically means that the request was successful and a new resource was created.
+
+4.Pagination is required when listing doctors because an API may have hundreds, thousands, or even millions of doctor records. Instead of returning all doctors in one response, pagination divides the data into smaller pages. 
+    Pagination can significantly improve performance because the application doesn't need to transfer and process the entire result set at once.
+
+5.In Django REST Framework (DRF), both APIView and ViewSet can be used to build APIs. However, ViewSets are often preferred for rapid CRUD development because they reduce the amount of repetitive code.
+
+6.
